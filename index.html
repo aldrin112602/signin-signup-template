@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="p-3 bg-primary">
+  <form action="javascript:void(0)" method="POST" class="container mx-auto border bg-white rounded">
+    <h2 class="p-2">Sign-in your account</h2>
+    <hr>
+    <div class="my-3">
+      <label for="username" class="form-label">Username</label>
+      <input type="text" id="username" name="username" class="form-control">
+    </div>
+    
+    <div class="my-3">
+      <label for="password" class="form-label">Password</label>
+      <div class="position-relative">
+        <input type="password" id="password" name="password" class="form-control">
+        <i id="eye" class="fa fa-eye-slash position-absolute top-50% right-20px transform-translate-y-N50%"></i>
+      </div>
+
+    </div>
+    
+    <div class="d-flex align-items-center justify-between">
+      <div class="d-flex align-items-center">
+        <input id="checkbox1" type="checkbox">&nbsp;
+        <label for="checkbox1" class="fs-6">Remember login</label>
+      </div>
+      <a href="#" class="fs-6">Forgot password?</a>
+    </div>
+    
+    <div class="my-3">
+      <button type="submit" class="btn-primary">Sign-in &nbsp; <i class="fas fa-sign-in text-white"></i></button>
+    </div>
+    
+    <p class="text-center fs-6">
+      Don't have an account? <a href="#" class="text-secondary">Sign-up now</a>
+    </p>
+    
+  </form>
+  
+  <script type="text/javascript" charset="utf-8">
+    (function() {
+      'use strict'
+      const pwd = document.querySelector('#password'), eye = document.querySelector('#eye');
+      eye.onclick = () => {
+        if(pwd.type == 'password') {
+          eye.classList.replace('fa-eye-slash', 'fa-eye');
+          pwd.type = 'text';
+        } else {
+          eye.classList.replace('fa-eye', 'fa-eye-slash');
+          pwd.type = 'password';
+        }
+      }
+    })();
+  </script>
+</body>
+
+</html
