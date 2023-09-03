@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Signup Form</title>
+  <title>Sign-up for free</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -45,9 +45,9 @@
     </div>
     
     <div class="d-flex align-items-center justify-between">
-      <div class="d-flex align-items-center justify-center">
+      <div class="d-flex align-items-center">
         <input required id="checkbox1" type="checkbox">&nbsp;
-        <label for="checkbox1" class="fs-7">Agree to <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
+        <label for="checkbox1" class="fs-6">Agree to <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
       </div>
     </div>
     
@@ -61,21 +61,7 @@
     
   </form>
   
-  <script type="text/javascript" charset="utf-8">
-    (function() {
-      'use strict'
-      const pwd = document.querySelector('#password'), eye = document.querySelector('#eye');
-      eye.onclick = () => {
-        if(pwd.type == 'password') {
-          eye.classList.replace('fa-eye-slash', 'fa-eye');
-          pwd.type = 'text';
-        } else {
-          eye.classList.replace('fa-eye', 'fa-eye-slash');
-          pwd.type = 'password';
-        }
-      }
-    })();
-  </script>
+  <script src="./main.js"></script>
 </body>
 
 </html
